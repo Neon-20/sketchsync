@@ -1,38 +1,17 @@
-"use client";
 import React from "react";
-import { IconAppWindow } from "@tabler/icons-react";
-import Image from "next/image";
-import { BackgroundGradient } from "@/components/background-gradient";
+import { BackgroundGradientAnimation } from "./_components/background-animation";
+import Logo from "./_components/logo";
 
-const BackgroundGradientDemo = () => {
-    return (
-      <div>
-      <BackgroundGradient className="rounded-[22px] max-w-sm p-4 sm:p-10 bg-white dark:bg-zinc-900">
-        <Image
-          src={`/jordans.webp`}
-          alt="jordans"
-          height="400"
-          width="400"
-          className="object-contain"
-        />
-        <p className="text-base sm:text-xl text-black mt-4 mb-2 dark:text-neutral-200">
-          Air Jordan 4 Retro Reimagined
+const BackgroundGradientAnimationDemo = () => {
+  return (
+    <BackgroundGradientAnimation>
+      <Logo/>
+      <div className="absolute z-50 inset-0 flex items-center justify-center text-white font-bold px-4 pointer-events-none text-3xl text-center md:text-4xl lg:text-6xl">
+        <p className="bg-clip-text drop-shadow-2xl bg-gradient-to-b from-yellow-500/100 to-cyan-500">
+        SketchSync For Collaborative <p className="bg-gradient-to-b bg-clip-text text-transparent from-yellow-500/100 to-cyan-500">Teams</p>
         </p>
-
-        <p className="text-sm text-neutral-600 dark:text-neutral-400">
-          The Air Jordan 4 Retro Reimagined Bred will release on Saturday,
-          February 17, 2024. Your best opportunity to get these right now is by
-          entering raffles and waiting for the official releases.
-        </p>
-        <button className="rounded-full pl-4 pr-1 py-1 text-white flex items-center space-x-1 bg-black mt-4 text-xs font-bold dark:bg-zinc-800">
-          <span>Buy now </span>
-          <span className="bg-zinc-700 rounded-full text-[0.6rem] px-2 py-0 text-white">
-            $100
-          </span>
-        </button>
-      </BackgroundGradient>
-    </div>
+      </div>
+    </BackgroundGradientAnimation>
   );
 }
-
-export default BackgroundGradientDemo
+export default BackgroundGradientAnimationDemo;
