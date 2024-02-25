@@ -24,7 +24,10 @@ const Logo = () => {
           SketchSync
         </p>
       </div>
-      <button className="Btn text-sm z-50 mr-4 cursor-pointer" type="button">
+      <button
+        className="Btn text-sm z-50 mr-4 cursor-pointer font-semibold"
+        type="button"
+      >
         <Link href="/auth/sign-in">Get Started</Link>
       </button>
     </div>
