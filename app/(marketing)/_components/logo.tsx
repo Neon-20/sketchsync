@@ -7,7 +7,7 @@ const Logo = () => {
     <div className="items-center justify-between flex flex-row flex-wrap">
       <div
         className="transition z-50 ease-in-out duration-300
-        items-center text-transparent bg-clip-text gap-x-2 p-4 flex cursor-pointer"
+        items-center text-transparent bg-clip-text gap-x-2 p-6 flex cursor-pointer"
       >
         <Image
           alt="Logo"
@@ -28,7 +28,7 @@ const Logo = () => {
         className="Btn text-sm z-50 mr-4 cursor-pointer font-semibold"
         type="button"
       >
-        <Link href="/auth/sign-in">Get Started</Link>
+        <Link href="/protected">Get Started</Link>
       </button>
     </div>
   );

@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { ClerkProvider } from "@clerk/nextjs";
-import { dark } from "@clerk/themes";
+import {ConvexClientProvider} from "@/providers/convex-client-provider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,16 +16,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <ClerkProvider
-      appearance={{
-        baseTheme: dark,
-      }}
-    >
       <html lang="en" suppressHydrationWarning>
         <body className={inter.className}>
+<<<<<<< HEAD
           {children}
+=======
+        <ConvexClientProvider>
+          {children}
+        </ConvexClientProvider>
+>>>>>>> 8d01f6c (minor changes)
         </body>
       </html>
-    </ClerkProvider>
   );
 }
