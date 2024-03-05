@@ -10,7 +10,7 @@ import Lottie from "lottie-react";
 import animationData from "@/public/doodle.json";
 
 const BackgroundGradientAnimationDemo = () => {
-  const router = useRouter();
+  const router = useRouter()
   return (
     <BackgroundGradientAnimation>
       <Logo />
